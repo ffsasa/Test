@@ -9,7 +9,7 @@ prompt: Tạo cửa sổ nhập liệu. let a = prompt("Tuổi?")
 const headings = document.getElementsByClassName('heading');
 console.log(headings)
 
-const heading1 = document.getElementById('h1'); //Lấy theo id
+const heading1 = document.getElementById('#h1'); //Lấy theo id
 
 const heading = document.querySelector('.heading') //Lấy theo class nhưng bằng lệnh query phải có thêm . hoặc # với id
 
