@@ -35,66 +35,91 @@
 
  -->
 <html>
-    <head>
-        <title>F8 - Shop</title>
-        <meta charset="utf-8">
-    </head>
 
-    <body>
-        <h1>F8 - Shop</h1>
+<head>
+    <title>F8 - Shop</title>
+    <meta charset="utf-8">
+    <style>
+        /* CSS để thay đổi màu sắc của đường kẻ trong bảng */
+        table {
+            border-collapse: collapse;
+            /* Để các đường kẻ nối liền và không cách */
+        }
 
-        <!-- Input -->
-        <input name="Gender" type="radio">
-        <input name="Gender" type="radio">
-        <input name="Gender" type="radio">
+        th,
+        td {
+            border: 1px solid black;
+            /* Đổi màu của đường kẻ thành màu xanh */
+        }
 
-        <p>Khác biệt trong khóa học Pro: trang học giao diện mới, bài học siêu chi tiết, thực hành nhiều dự án, bài tập có gợi ý, đáp án và video chữa bài, v.v.</p>
-        
-        <img src="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png" alt="Logo F8">
-        
-        <iframe src="" frameborder="0"></iframe>
+        th:nth-child(1) {
+            background-color: yellow;
+            /* Đặt màu nền cho các hàng chẵn */
+        }
+        td:nth-child(1) {
+            background-color: yellow;
+            /* Đặt màu nền cho các hàng chẵn */
+        }
+    </style>
+</head>
 
-        <a href="https://fullstack.edu.vn/">Học lập trình</a>
-        <!-- Bỏ gạch chân mặc định của thẻ a
+<body>
+    <h1>F8 - Shop</h1>
+
+    <!-- Input -->
+    <input name="Gender" type="radio">
+    <input name="Gender" type="radio">
+    <input name="Gender" type="radio">
+
+    <p>Khác biệt trong khóa học Pro: trang học giao diện mới, bài học siêu chi tiết, thực hành nhiều dự án, bài tập có
+        gợi ý, đáp án và video chữa bài, v.v.</p>
+
+    <img src="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png" alt="Logo F8">
+
+    <iframe src="" frameborder="0"></iframe>
+
+    <a href="https://fullstack.edu.vn/">Học lập trình</a>
+    <!-- Bỏ gạch chân mặc định của thẻ a
         text-decoration: none; -->
 
-        <ul>
-            <!-- gõ li*4 để ra nhanh 4 li -->
-            <li>HTML, CSS là gì?</li>
-            <li>Cài đặt môi trường</li>
-            <li>Làm quen với dev tools</li>
-            <li>Tạo trang html đầu tiên</li>
-        </ul>
+    <ul>
+        <!-- gõ li*4 để ra nhanh 4 li -->
+        <li>HTML, CSS là gì?</li>
+        <li>Cài đặt môi trường</li>
+        <li>Làm quen với dev tools</li>
+        <li>Tạo trang html đầu tiên</li>
+    </ul>
 
-        <table>
-            <!-- Phần đầu của bảng -->
-            <thead>
-                <!-- th là table heading -->
-                <th>STT</th>
-                <th>Tên</th>
-                <th>Địa chỉ</th>
-            </thead>
+    <table>
+        <!-- Phần đầu của bảng -->
+        <thead>
+            <!-- th là table heading -->
+            <th>STT</th>
+            <th>Tên</th>
+            <th>Địa chỉ</th>
+        </thead>
 
-            <tbody>
-                <!-- tr là table row -->
-                <tr>
-                    <td>1</td>
-                    <td>Ngọc An</td>
-                    <td>Gia Lai</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Mai Thuy</td>
-                    <td>Bình Định</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Hương Giang</td>
-                    <td>Quảng Ngãi</td>
-                </tr>
-            </tbody>
-        </table>
+        <tbody>
+            <!-- tr là table row -->
+            <tr>
+                <td>1</td>
+                <td>Ngọc An</td>
+                <td>Gia Lai</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mai Thuy</td>
+                <td>Bình Định</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Hương Giang</td>
+                <td>Quảng Ngãi</td>
+            </tr>
+        </tbody>
+    </table>
 
-        <button>Lưu</button>
-    </body>
+    <button>Lưu</button>
+</body>
+
 </html>
